@@ -25,7 +25,7 @@ plot(datetimes,hhpc$Sub_metering_1,
      ylab = "Energy sub meterings")
 lines(datetimes,hhpc$Sub_metering_2, col = "red")
 lines(datetimes,hhpc$Sub_metering_3, col = "blue")
-legend("topright", col = c("black", "red", "blue"), lty = 1, legend = names(hhpc[,7:9]))
+legend("topright", col = c("black", "red", "blue"), bty = "n", lty = 1, legend = names(hhpc[,7:9]))
 
 plot(datetimes,hhpc$Global_reactive_power, 
      type = "l", 
